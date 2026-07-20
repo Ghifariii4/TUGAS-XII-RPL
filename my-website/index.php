@@ -36,7 +36,19 @@
             echo "<p>Maaf, halaman yang Anda cari tidak tersedia.</p>";
         }
         ?>
-    </main>
+    </main>  <br>        
+
+    <!-- ================= IMPLODE dan EXPLODE ================= -->
+<h1 style="color: red;">Contoh penggunaan implode dan explode dalam PHP:</h1>
+    <?php
+    // Contoh penggunaan implode dan explode
+    $fruits = ['apple', 'banana', 'orange'];
+    $fruits_string = implode(', ', $fruits);
+    echo "<p>Daftar buah: $fruits_string</p>";
+
+    $fruits_array = explode(', ', $fruits_string);
+    echo "<p>Elemen pertama: " . $fruits_array[0] . "</p>";
+    ?>
 
     <!-- ================= FOOTER ================= -->
     <footer>
