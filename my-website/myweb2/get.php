@@ -9,5 +9,6 @@ if (isset($_GET['nama']) && isset($_GET['password'])) {
     <p>masukan password <input type="password" name="password"></p>
     <input type="submit" value="kirim">
 
-<a href="index.php">Kembali ke halaman utama</a>
+<a href="index.php">Kembali ke halaman utama myweb2</a>
+<a href="../index.php">Kembali ke Website Utama</a>
 </form>

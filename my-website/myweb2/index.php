@@ -9,5 +9,7 @@
     <h1>Selamat datang di website saya</h1>
     <p link><a href="tugas.php">Tugas PHP</a></p>
     <p link><a href="get.php">Halaman GET</a></p>
+    <p link><a href="post.php">Halaman POST</a></p>
+    <p link><a href="../index.php">Kembali ke Website Utama</a></p>
 </body>
 </html>

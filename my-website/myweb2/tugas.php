@@ -47,8 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <br><br>
-<a href="index.php">Kembali ke halaman utama</a>
+<a href="index.php">Kembali ke halaman utama myweb2</a>
 <a href="get.php">Kembali ke halaman get</a>
+<a href="../index.php">Kembali ke Website Utama</a>
 
 </body>
 </html>
