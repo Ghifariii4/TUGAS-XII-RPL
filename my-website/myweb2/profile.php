@@ -1,11 +1,13 @@
 <?php
 
-if(isset($_POST['submit'])){
-echo $_POST['password'];
+if (isset($_GET['nama'])) {
+    $nama = htmlspecialchars($_GET['nama']);
+    echo "<h2>Selamat datang, $nama!</h2>";
+    echo "<p>Senang melihat Anda kembali.</p>";
+} else {
+    echo "<p>Silakan <a href='post.php'>login</a> terlebih dahulu.</p>";
 }
+
 ?>
-<form action="post2.php" method="get">
-    <p>masukan nama <input type="text" name="nama"></p>
-    <p>masukan password <input type="password" name="password"></p>
-    <input type="submit" name="submit" value="kirim">
+
 <a href="../index.php">Kembali ke Website Utama</a>
