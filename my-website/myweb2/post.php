@@ -8,7 +8,10 @@ if (isset($_POST['submit'])) {
         $_POST['password'] == $password) {
        
         header("Location: profile.php?nama=$user&password=$password");
-        exit;
+
+        //cookie
+        // setcookie(key, value, and expire time)
+        setcookie("nama_user", $_POST('nama),time() + 180'));
     }else {
         echo "nama atau password salah";
     }
