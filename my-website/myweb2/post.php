@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
         echo "nama atau password salah";
     }
 }
-
+    
 ?>
 
 <form action="" method="post">
