@@ -8,6 +8,7 @@ if (isset($_POST['submit'])) {
         $_POST['password'] == $password) {
        
         header("Location: profile.php?nama=$user&password=$password");
+        exit;
     }else {
         echo "nama atau password salah";
     }
@@ -15,7 +16,7 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-<form action="index.php" method="post">
+<form action="" method="post">
     <p>masukan nama <input type="text" name="nama"></p>
     <p>masukan password <input type="password" name="password"></p>
     <input type="submit" name="submit" value="kirim">
