@@ -6,6 +6,7 @@ if(isset($_POST['submit'])) {
 
     echo "<br>";
     echo "<h3>Data yang Diterima:</h3>" . "<br>";
-    echo "Nama: " . ($nama) . "<br>";-
+    echo "Nama: " . ($nama) . "<br>";
     echo "Password: " . ($password) . "<br>";
 }
+?>
