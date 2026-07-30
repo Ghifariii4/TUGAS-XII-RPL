@@ -25,3 +25,5 @@ if (isset($_POST['submit'])) {
     <input type="submit" name="submit" value="kirim">
 </form>
 <a href="../index.php">Kembali ke Website Utama</a>
+<a href="logout.php">Logouqt</a>
+
