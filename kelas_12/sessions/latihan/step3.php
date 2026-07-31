@@ -22,4 +22,4 @@ echo implode(", ", $_SESSION['workshop']);
 
 <a href="success.php">Konfirmasi & Simpan</a>
 <br><br>
-<a href="reset.php">Batal</a>
+<a href="reset.php">Batal/Reset</a>

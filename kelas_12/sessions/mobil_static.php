@@ -1,10 +1,13 @@
 <?php
 
-class mobil {
-    public static $jumlah_roda = 4;
-    const JENIS = "kendaraan darat";
+session_start();
 
-    public static function infomobil() {
-        return "Jenis". self::JENIS ;
-    }
+if(isset($_POST['next']))
+{
+    $_SESSION['nama'] = $_POST['nama'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['telp'] = $_POST['telp'];
+
+    header("Location: step2.php");
 }
+?>
