@@ -1,0 +1,19 @@
+# Nonaktifkan eksekusi script untuk memblokir celah injeksi PHP/web shell
+<FilesMatch "\.(php|php3|php4|php5|php7|php8|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Matikan engine PHP jika berjalan sebagai modul Apache
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+# Cegah listing directory file di browser
+Options -Indexes
